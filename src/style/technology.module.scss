@@ -1,5 +1,11 @@
 @import "./_variables";
+.grid {
+  width: calc(100vw - 10vw);
+
+}
+
 .textArea {
+
   border: 3px solid purple;
   display: flex;
   width: 100%;
@@ -37,6 +43,11 @@
 
 .imgContainer {
   grid-row: 1 / span 2;
+  text-align: right;
+  min-height: calc(100vh - 96px - 5vh - 10px);
+  .img {
+   min-height: 100%; 
+  }
 }
 
 .article .tag {

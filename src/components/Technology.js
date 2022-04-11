@@ -17,12 +17,13 @@ function Technology() {
 
   return (
     <div className="pageContainer">
-      <div className="grid">
+      <div className={`grid ${styles.grid}`}>
         <div className="pageTitle">
           <span>03</span>SPACE LAUNCH 101
         </div>
         <div className={`imgContainer ${styles.imgContainer}`}>
           <img
+          className={styles.img}
             src={require(`../asset/image-${imgPathName}-portrait.jpg`)}
           ></img>
         </div>
