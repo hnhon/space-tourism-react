@@ -1,0 +1,74 @@
+@import "./_variables";
+
+*,
+*::backdrop,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body {
+  min-height: 100%;
+  background-color: #0B0D17;
+  color: white;
+  width: 100vw;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+//navlink style
+.active {
+  border-bottom: 3px solid white !important;
+}
+
+//page layout
+.pageContainer {
+  min-height: 100vh;
+  padding-top: 96px;
+  border: 2px solid red;
+}
+.grid {
+  width: 80vw;
+  margin: 0 auto;
+  border: 1px solid white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5vh;
+  grid-auto-rows: minmax(min-content, max-content);
+}
+
+.pageTitle {
+  font-family: $barlowcondense;
+  font-size: 1.7rem;
+  letter-spacing: 4.72px;
+  height: 3rem;
+  grid-column: 1;
+  grid-row: 1;
+  border: 1px solid white;
+  span {
+    color: rgba($color: #fff, $alpha: 0.25);
+    margin-right: 10px;
+  }
+}
+
+.imgContainer {
+  padding-top: 10px;
+  text-align: center;
+  border: 1px solid white;
+  img {
+    max-width: 100%;
+  }
+}

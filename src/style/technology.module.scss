@@ -1,0 +1,56 @@
+@import "./_variables";
+.textArea {
+  border: 3px solid purple;
+  display: flex;
+  width: 100%;
+  padding-bottom: 5%;
+  .links {
+      border: 1px solid green;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+      border: 1px solid rgba(#fff, 0.25);
+      border-radius: 50%;
+      color: white; 
+      &:hover {
+        cursor: pointer;
+        border: 1px solid white;
+      }
+      &.selected {
+          background-color: white;
+          color: black;
+      }  
+    }
+  }
+  .article {
+      flex-basis: 80%;
+  }
+}
+
+.imgContainer {
+  grid-row: 1 / span 2;
+}
+
+.article .tag {
+  font-family: $barlowcondense;
+  font-size: 1.2rem;
+  letter-spacing: 2.7px;
+}
+
+.article .name {
+  font-family: $bellefair;
+  font-size: 2rem;
+}
+
+.article .description {
+  font-family: $barlowcondense;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,64 @@
+@import "./_variables";
+
+.homeContainer {
+  color: white;
+  background-image: url("../asset/background-home-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  .textArea {
+    flex-basis: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .tagline {
+    font-family: $barlowcondense;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+  }
+  .title {
+    font-family: $bellefair;
+    font-size: 150px;
+  }
+  .content {
+    font-family: $barlowcondense;
+    font-size: 18px;
+    width: 47ch;
+  }
+  .buttonContainer {
+    position: relative;
+    z-index: 2;
+    flex-basis: 50%;
+
+    .btn {
+      font-family: $bellefair;
+      font-size: 32px;
+      letter-spacing: 2px;
+      height: 274px;
+      width: 274px;
+      border: none;
+      border-radius: 50%;
+      background-color: white;
+      &:hover {
+        cursor: pointer;
+        &::before {
+          content: "";
+          width: calc(274px * 1.2);
+          height: calc(274px * 1.2);
+          position: absolute;
+          top: calc(-274px * 0.1);
+          left: calc(-274px * 0.1);
+          background-color: rgba($color: #fff, $alpha: 0.1);
+          border-radius: 50%;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}

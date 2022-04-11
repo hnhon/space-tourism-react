@@ -1,0 +1,71 @@
+@import "./_variables";
+
+.imgContainer {
+  padding-top: 10px;
+  grid-column: 1;
+  grid-row: 2;
+  img {
+    max-width: 100%;
+
+  }
+}
+
+.textArea {
+  padding-top: 10px;
+  padding-left: 100px;
+  grid-column: 2;
+  grid-row: 2;
+  .links {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    .link {
+      font-family: $barlowcondense;
+      font-size: 1.5rem;
+      letter-spacing: 2.7px;
+      cursor: pointer;
+      padding-bottom: 5px;
+      &:hover {
+        border-bottom: 3px solid rgba($color: #fff, $alpha: 0.5);
+      }
+      &.selected {
+        border-bottom: 3px solid white;
+      }
+    }
+  }
+  .destinationName {
+    font-family: $bellefair;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  .text {
+    .content {
+      font-family: $barlowcondense;
+      font-size: 1.7rem;
+      width: 46ch;
+    }
+    .infoContainer {
+      display: flex;
+      border-top: 1px solid #383b4b;
+      margin-top: 20px;
+      padding-top: 20px;
+      .info {
+        .title {
+          font-family: $barlowcondense;
+          text-transform: uppercase;
+          font-size: 1.5rem;
+        }
+        .number {
+          font-family: $bellefair;
+          text-transform: uppercase;
+          font-size: 2rem;
+        }
+        &:nth-child(2) {
+          margin-left: 10%;
+        }
+      }
+    }
+  }
+}

@@ -26,12 +26,12 @@ function Destination() {
   });
 
   return (
-    <div className={styles.desContainer}>
-      <div className={styles.grid}>
-        <div className={styles.pageTitle}>
+    <div className='pageContainer'>
+      <div className='grid'>
+        <div className="pageTitle">
           <span>01</span>Pick Your destination
         </div>
-        <div className={styles.imgContainer}>
+        <div className={`imgContainer ${styles.imgContainer}`}>
           <img src={require(`../asset/image-${name.toLowerCase()}.png`)}></img>
         </div>
         <div className={styles.textArea}>
