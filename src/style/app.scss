@@ -39,15 +39,19 @@ ul {
   min-height: 100vh;
   padding-top: 96px;
   border: 2px solid red;
+  background-color: green;
+  position: relative;
 }
 .grid {
   width: 80vw;
-  margin: 0 auto;
   border: 1px solid white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 5vh;
   grid-auto-rows: minmax(min-content, max-content);
+  position: absolute;
+  left: 10vw;
+
 }
 
 .pageTitle {

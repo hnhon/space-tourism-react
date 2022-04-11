@@ -25,7 +25,7 @@ function Crew() {
           <span>02</span>Meet Your Crew
         </div>
         <div className={`imgContainer ${styles.imgContainer}`}>
-          <img src={require(`../asset/image-${imgPathName}.png`)}></img>
+          <img className={styles.img} src={require(`../asset/image-${imgPathName}.png`)}></img>
         </div>
         <div className={styles.textArea}>
           <div>

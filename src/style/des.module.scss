@@ -1,12 +1,16 @@
 @import "./_variables";
 
+.grid {
+  grid-row-gap: 200px;
+}
+
 .imgContainer {
-  padding-top: 10px;
   grid-column: 1;
   grid-row: 2;
+  border: 1px solid purple;
+
   img {
     max-width: 100%;
-
   }
 }
 
@@ -15,6 +19,7 @@
   padding-left: 100px;
   grid-column: 2;
   grid-row: 2;
+  border: 1px solid red;
   .links {
     width: 70%;
     display: flex;

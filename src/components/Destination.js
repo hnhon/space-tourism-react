@@ -27,7 +27,7 @@ function Destination() {
 
   return (
     <div className='pageContainer'>
-      <div className='grid'>
+      <div className={`grid ${styles.grid}`}>
         <div className="pageTitle">
           <span>01</span>Pick Your destination
         </div>

@@ -3,6 +3,10 @@
 .imgContainer {
     grid-column: 2 / 3;
     grid-row : 1 / span 2;
+    height: calc(100vh - 96px - 5vh);
+    .img {
+        height: 100%;
+    }
 }
 
 .textArea {
