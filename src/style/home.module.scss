@@ -8,14 +8,18 @@
   background-size: cover;
   min-height: 100vh;
   padding-top: 96px;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+
   width: 100%;
+  border: 2px solid red;
+  & > div {
+    flex: 1;
+  }
   .textArea {
-    flex-basis: 50%;
-    padding-left: 10%;
-    padding-right: 10%;
+    border: 2px solid grey;
+    padding-left: 5vw;
   }
   .tagline {
     font-family: $barlowcondense;
@@ -29,13 +33,11 @@
   .content {
     font-family: $barlowcondense;
     font-size: 2.5rem;
-    width: 47ch;
+    max-width: 47ch;
   }
   .buttonContainer {
-    position: relative;
-    z-index: 2;
-    flex-basis: 50%;
-
+    border: 2px solid gray;
+    text-align: center;
     .btn {
       font-family: $bellefair;
       font-size: 2.5rem;
@@ -45,6 +47,7 @@
       border: none;
       border-radius: 50%;
       background-color: white;
+      position: relative;
       &:hover {
         cursor: pointer;
         &::before {
@@ -56,9 +59,32 @@
           left: calc(-274px * 0.1);
           background-color: rgba($color: #fff, $alpha: 0.1);
           border-radius: 50%;
-          z-index: -1;
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .homeContainer {
+    flex-direction: column;
+    background-image: url("../asset/background-home-tablet.jpg");
+    .textArea {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0;
+      .content {
+        padding-left: 2vw;
+        padding-right: 2vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .homeContainer {
+    background-image: url("../asset/background-home-mobile.jpg");
   }
 }

@@ -28,11 +28,11 @@ function Destination() {
   return (
     <div className='pageContainer'>
       <div className={`grid ${styles.grid}`}>
-        <div className="pageTitle">
+        <div className={`pageTitle ${styles.pageTitle}`}>
           <span>01</span>Pick Your destination
         </div>
         <div className={`imgContainer ${styles.imgContainer}`}>
-          <img src={require(`../asset/image-${name.toLowerCase()}.png`)}></img>
+          <img className={styles.img} src={require(`../asset/image-${name.toLowerCase()}.png`)}></img>
         </div>
         <div className={styles.textArea}>
           <ul className={styles.links}>
