@@ -16,18 +16,16 @@
 
 .textArea {
   border: 1px solid white;
-  & > div:first-child {
-    border: 1px solid red;
+  .role {
     font-family: $bellefair;
-    font-size: 2rem;
+    font-size: 3rem;
+    background-color:aqua;
   }
-  & > div:nth-child(2) {
-    border: 1px solid red;
+  .name {
     font-family: $bellefair;
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
-  & > div:nth-child(3) {
-    border: 1px solid red;
+  .description {
     font-family: $barlowcondense;
     font-size: 2.5rem;
   }

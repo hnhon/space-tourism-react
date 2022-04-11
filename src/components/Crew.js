@@ -29,9 +29,9 @@ function Crew() {
         </div>
         <div className={styles.textArea}>
           <div>
-            <div>{role}</div>
-            <div>{name}</div>
-            <div>{description}</div>
+            <div className={styles.role}>{role}</div>
+            <div className={styles.name}>{name}</div>
+            <div className={styles.description}>{description}</div>
           </div>
 
           <ul className={styles.links}>
