@@ -38,13 +38,10 @@ ul {
 .pageContainer {
   min-height: 100vh;
   padding-top: 96px;
-  border: 2px solid red;
-  background-color: green;
   position: relative;
 }
 .grid {
   width: 80vw;
-  border: 1px solid white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 5vh;
@@ -60,7 +57,6 @@ ul {
   letter-spacing: 0.3rem;
   grid-column: 1;
   grid-row: 1;
-  border: 1px solid white;
   span {
     color: rgba($color: #fff, $alpha: 0.25);
     margin-right: 10px;
@@ -70,7 +66,6 @@ ul {
 .imgContainer {
   padding-top: 10px;
   text-align: center;
-  border: 1px solid white;
   img {
     max-width: 100%;
   }

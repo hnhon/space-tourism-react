@@ -11,13 +11,7 @@
   top: 0;
   left: 5vw;
   width: calc(100vw - 5vw);
-  border: 1px solid white;
-  background-color: aqua;
   z-index: 10;
-}
-
-.hamburger {
-    display: none;
 }
 
 .logocontainer {
@@ -56,6 +50,16 @@
   }
 }
 
+.menu {
+  display: none;
+  .line {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+  }
+}
+
 @media only screen and (max-width: 870px) {
   .linkscontainer {
     width: 70%;
@@ -64,10 +68,10 @@
 }
 
 @media only screen and (max-width: 560px) {
-    .linkscontainer {
-        display: none;
-    }
-    .linkscontainer.active {
+  .linkscontainer {
+    display: none;
+  }
+  .linkscontainer.active {
     display: block;
     font-size: 2rem;
     position: fixed;
@@ -75,19 +79,31 @@
     top: 0;
     flex-direction: column;
     justify-content: flex-start;
-    &>li:first-child {
-        margin-top: calc(96px + 5vh)
+    & > li:first-child {
+      margin-top: calc(96px + 5vh);
     }
-    &>li:nth-child(n + 2) {
-        margin-top: 10vh;
+    & > li:nth-child(n + 2) {
+      margin-top: 10vh;
     }
   }
-  .hamburger {
-      display: block;
-      margin-left: auto;
-      margin-right: 20px;
-      position: relative;
-      z-index: 10;
+  .menu {
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+    position: relative;
+    z-index: 10;
+  }
+  .menu.active {
+    .line {
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      &:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
   }
 }
-

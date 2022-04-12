@@ -11,14 +11,11 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-
   width: 100%;
-  border: 2px solid red;
   & > div {
     flex: 1;
   }
   .textArea {
-    border: 2px solid grey;
     padding-left: 5vw;
   }
   .tagline {
@@ -36,7 +33,6 @@
     max-width: 47ch;
   }
   .buttonContainer {
-    border: 2px solid gray;
     text-align: center;
     .btn {
       font-family: $bellefair;
