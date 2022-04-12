@@ -80,4 +80,17 @@ ul {
   html {
     font-size: 14px;
   }
+
+  .pageContainer {
+    position: static;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
