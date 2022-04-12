@@ -3,19 +3,17 @@
 .imgContainer {
   grid-column: 2 / 3;
   grid-row: 1 / span 2;
-  min-height: calc(100vh - 96px - 5vh - 10px);
-  background-color: aqua;
+  height: calc(100vh - 100px - 2vh);
+  padding-top: 0;
   .img {
     min-height: 100%;
   }
 }
 
 .textArea {
-  border: 1px solid white;
   .role {
     font-family: $bellefair;
     font-size: 3rem;
-    background-color:aqua;
   }
   .name {
     font-family: $bellefair;
@@ -23,13 +21,12 @@
   }
   .description {
     font-family: $barlowcondense;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
 .links {
   display: flex;
-  border: 1px solid pink;
   width: 50%;
   justify-content: space-between;
 }
@@ -49,8 +46,22 @@
   background-color: rgba(#fff, 1);
 }
 
-@media only screen and (max-width: 478px) {
+
+@media only screen and (max-width: 1000px) {
   .imgContainer {
     min-height: auto;
+    height: auto;
+    .img {
+      min-height: auto;
+    }
+  }
+  .textArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    .content {
+      order: 1;
+    }
   }
 }

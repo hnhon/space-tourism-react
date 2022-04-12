@@ -6,7 +6,7 @@
   align-items: center;
   color: white;
   height: 96px;
-  background-color: transparent;
+  background-color: black;
   position: fixed;
   top: 0;
   left: 5vw;
@@ -79,6 +79,9 @@
     top: 0;
     flex-direction: column;
     justify-content: flex-start;
+    & > li {
+      margin-left: 20px;
+    }
     & > li:first-child {
       margin-top: calc(96px + 5vh);
     }

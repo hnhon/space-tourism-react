@@ -1,14 +1,12 @@
 @import "./_variables";
 
 .grid {
-  grid-row-gap: 200px;
-  background-color: aqua;
+  grid-row-gap: 50px;
 }
 
 .imgContainer {
   grid-column: 1;
   grid-row: 2;
-  border: 1px solid purple;
   .img {
     max-width: 100%;
   }

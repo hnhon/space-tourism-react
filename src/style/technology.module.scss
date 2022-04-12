@@ -4,12 +4,10 @@
 }
 
 .textArea {
-  border: 3px solid purple;
   display: flex;
   width: 100%;
   padding-bottom: 5%;
   .links {
-      border: 1px solid green;
     flex-basis: 20%;
     display: flex;
     flex-direction: column;
@@ -64,8 +62,9 @@
   font-size: 2.5rem;
 }
 
-@media only screen and (max-width: 478px) {
+@media only screen and (max-width: 1000px) {
   .imgContainer {
     min-height: auto;
+    text-align: center;
   }
 }

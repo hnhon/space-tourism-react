@@ -1,15 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../asset/starlogo.svg";
-import hamburger from "../asset/svg/hamburger.svg";
-import close from "../asset/svg/close.svg";
 import styles from "../style/nav.module.scss";
 
 function Nav() {
-  let activeStyle = {
-    borderBottom: "3px solid white",
-    paddingBottom: "0",
-  };
   const [isActive, setIsActive] = useState(false);
   const handleOnClick = () => {
     setIsActive(!isActive);

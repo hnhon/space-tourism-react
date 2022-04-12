@@ -28,7 +28,7 @@ function Crew() {
           <img className={styles.img} src={require(`../asset/image-${imgPathName}.png`)}></img>
         </div>
         <div className={styles.textArea}>
-          <div>
+          <div className={styles.content}>
             <div className={styles.role}>{role}</div>
             <div className={styles.name}>{name}</div>
             <div className={styles.description}>{description}</div>
